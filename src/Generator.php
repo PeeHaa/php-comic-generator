@@ -20,8 +20,10 @@ class Generator
     {
         $image->addText($text);
 
-        imagepng($image->getResource(), sprintf('%s/%s.png', $this->outputDirectory, $this->uuidFactory->uuid4()));
+        $filename = sprintf('%s/%s.png', $this->outputDirectory, $this->uuidFactory->uuid4());
 
-        return new Comic(sprintf('%s/%s.png', $this->outputDirectory, $this->uuidFactory->uuid4()));
+        imagepng($image->getResource(), $filename);
+
+        return new Comic($filename);
     }
 }
