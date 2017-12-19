@@ -11,4 +11,9 @@ class Type extends Enum
     const NEUTRAL = 'neutral.png';
     const ANGRY   = 'angry.png';
     const SAD     = 'sad.png';
+    const GRUMPY  = 'grumpy.png';
+    const HANGME  = 'hangme.png';
+    const REPLY   = 'reply.png';
+    const THELOOK = 'thelook.png';
+    const WAT     = 'wat.png';
 }

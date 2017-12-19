@@ -129,7 +129,7 @@ class Image
 
         return [
             'x' => (int) abs(((self::MAXIMUM_WIDTH / 2) - ($textWidth / 2) + self::QUOTE_OFFSET_X)),
-            'y' => (int) abs(((self::MAXIMUM_HEIGHT / 2) - ($textHeight / 2) + self::QUOTE_OFFSET_Y)),
+            'y' => (int) abs(((self::MAXIMUM_HEIGHT / 2) - ($textHeight / 2) + self::QUOTE_OFFSET_Y)) + self::QUOTE_OFFSET_Y,
         ];
     }
 
